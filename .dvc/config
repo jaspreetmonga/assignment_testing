@@ -1,4 +1,5 @@
 [core]
     remote = localstorage
+    autostage = true
 ['remote "localstorage"']
     url = C:\Users\dell\Documents\BITS_STUDY_MATERIAL\Semester - 3\Mlops\assignment\dvcstore
