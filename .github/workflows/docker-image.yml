@@ -17,11 +17,11 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t nishijain411/california_housing:latest .
+        run: docker build -t nishi/california_housing:latest .
 
       - name: Push Docker image
-        run: docker push nishijain411/california_housing:latest
+        run: docker push nishi/california_housing:latest
 
