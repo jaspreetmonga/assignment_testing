@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  # Change if your main branch has a different name
+      - main  # Change if your main branch name is different
 
 jobs:
   build-and-push:
@@ -20,8 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t nishijain411/california_housing:latest .
+        run: docker build -t jaspreett21/assignment1:latest .
 
       - name: Push Docker image
-        run: docker push nishijain411/california_housing:latest
-
+        run: docker push jaspreett21/assignment1:latest
